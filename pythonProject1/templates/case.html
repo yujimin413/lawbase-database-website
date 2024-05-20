@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Cases</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            margin: 0 auto;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        a.button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>View Cases</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>case_ID</th>
+                <th>client_ID</th>
+                <th>title</th>
+                <th>department</th>
+                <th>open_date</th>
+                <th>close_date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for case in cases_data %}
+            <tr>
+                <td>{{ case[0] }}</td>
+                <td>{{ case[1] }}</td>
+                <td>{{ case[2] }}</td>
+                <td>{{ case[3] }}</td>
+                <td>{{ case[4] }}</td>
+                <td>{{ case[5] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/" class="button">Return to Main Menu</a>
+</body>
+</html>
+

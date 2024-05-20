@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Court Table</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            margin: 0 auto;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        a.button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Court Table</h1>
+    <table>
+        <tr>
+            <th>Court ID</th>
+            <th>Name</th>
+            <th>Court Type</th>
+            <th>Location</th>
+        </tr>
+        {% for court in court_data %}
+        <tr>
+            <td>{{ court[0] }}</td>
+            <td>{{ court[1] }}</td>
+            <td>{{ court[2] }}</td>
+            <td>{{ court[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/" class="button">Return to Main Menu</a>
+</body>
+</html>

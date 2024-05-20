@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Client Data</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            margin: 0 auto;
+            width: 50%; /* Adjust as needed */
+            max-width: 600px; /* Adjust as needed */
+            text-align: left; /* Reset text alignment for form content */
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Update Client</h1>
+    <form method="POST">
+        <label for="client_id">Client ID:</label>
+        <input type="text" id="client_id" name="client_id" required><br><br>
+
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+
+        <label for="contact_no">Contact No:</label>
+        <input type="text" id="contact_no" name="contact_no" placeholder="123-456-7890" required><br><br>
+
+        <label for="specialization">Specialization:</label>
+        <input type="text" id="specialization" name="specialization" required><br><br>
+
+        <input type="submit" value="Update Client">
+    </form>
+    <br>
+</body>
+</html>

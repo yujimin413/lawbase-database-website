@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Document Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center; /* Center align the content */
+        }
+
+        form {
+            display: inline-block;
+            text-align: left; /* Reset text alignment for form content */
+            margin-top: 20px; /* Add some space between heading and form */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 300px; /* Set width for input fields */
+            padding: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Update Document</h1>
+    <form method="post">
+        <label for="document_id">Document ID:</label>
+        <input type="text" id="document_id" name="document_id" required><br><br>
+
+        <label for="document_type">Document Type:</label>
+        <input type="text" id="document_type" name="document_type" required><br><br>
+
+        <label for="document_content">Document Content:</label>
+        <input type="text" id="document_content" name="document_content" required><br><br>
+
+        <input type="submit" value="Update Document">
+    </form>
+</body>
+</html>

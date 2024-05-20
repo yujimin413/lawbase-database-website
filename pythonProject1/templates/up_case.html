@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Case Data</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            margin: 0 auto;
+            width: 50%; /* Adjust as needed */
+            max-width: 600px; /* Adjust as needed */
+            text-align: left; /* Reset text alignment for form content */
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Update Case</h1>
+    <form method="post">
+        <label for="case_id">Case ID:</label>
+        <input type="text" id="case_id" name="case_id" required><br><br>
+
+        <label for="client_id">Client ID:</label>
+        <input type="text" id="client_id" name="client_id" required><br><br>
+
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required><br><br>
+
+        <label for="open_date">Open Date:</label>
+        <input type="text" id="open_date" name="open_date" placeholder="YYYY-MM-DD" required><br><br>
+
+        <label for="close_date">Close Date:</label>
+        <input type="text" id="close_date" name="close_date" placeholder="YYYY-MM-DD"><br><br>
+
+        <input type="submit" value="Update Case">
+    </form>
+</body>
+</html>
+

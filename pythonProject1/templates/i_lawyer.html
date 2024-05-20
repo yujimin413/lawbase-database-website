@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Lawyer</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            margin: 0 auto;
+            width: 50%; /* Adjust as needed */
+            max-width: 400px; /* Adjust as needed */
+            text-align: left; /* Reset text alignment for form content */
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Insert Lawyer</h1>
+    <form action="{{ url_for('insert_lawyer') }}" method="POST">
+        <label for="first_name">First Name:</label><br>
+        <input type="text" id="first_name" name="first_name"><br><br>
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" id="last_name" name="last_name"><br><br>
+        <label for="contact_no">Contact Number:</label><br>
+        <input type="text" id="contact_no" name="contact_no"><br><br>
+        <label for="department">Department:</label><br>
+        <input type="text" id="department" name="department"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
