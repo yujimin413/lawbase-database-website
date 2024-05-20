@@ -1,9 +1,11 @@
-# 👩‍⚖️ Lawbase Database Website
+# ⚖️ Lawbase Database Website
 <img width="1399" alt="image" src="https://github.com/yujimin413/lawbase-database-website/assets/84549242/a908ee3b-7d63-4c33-8b70-05a58393fdc5">
 This website serves as a comprehensive platform for managing legal cases, clients,
 courts, documents, lawyers, and users.
 
 # 🛠️ Tool Used
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/><img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/><img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/>
+
 
 # 💻 How to Install
 Download the zip file and open the file "Connecty.py".
@@ -35,14 +37,14 @@ You can insert a new data to each table.
 For example, you can add a new case by filling out the required attributes. Once submitted, the data will be successfully added to the `Cases` table.
 ![Screen Recording 2024-05-20 at 3 22 31 PM](https://github.com/yujimin413/lawbase-database-website/assets/84549242/328b0b36-ac68-47e3-b4a8-4ceed0236d49)
 
-## 4. Update Data
+## 4. `Update Data`
 There's the option to update existing data.
 <img width="1552" alt="image" src="https://github.com/yujimin413/lawbase-database-website/assets/84549242/cb892de6-b84c-4a29-99d9-8358b83bea7e">
 
 For instatnce, updating data in the `Cases` table requires selecting the existing CaseID and ClientID for updating, and filling out the other necessary fields. Upon submission, you'll see the updated data.
 ![Screen Recording 2024-05-20 at 3 24 58 PM](https://github.com/yujimin413/lawbase-database-website/assets/84549242/1aed6680-9d15-4b86-87be-847fc20b4e33)
 
-## 5. Delete Data
+## 5. `Delete Data`
 you can easily remove unwanted records from the database.
 <img width="1552" alt="image" src="https://github.com/yujimin413/lawbase-database-website/assets/84549242/0e7f6ad3-bf17-4df4-999f-bfa7e24d5968">
 ![Screen Recording 2024-05-20 at 3 26 18 PM](https://github.com/yujimin413/lawbase-database-website/assets/84549242/7b14e557-2c88-49cc-84fc-8849c50dbdef)
